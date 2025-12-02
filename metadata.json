@@ -1,0 +1,5 @@
+{
+  "name": "Tesla Short Seller Mood Tracker",
+  "description": "A contrarian stock tracker for Tesla (TSLA) that gets happy when the stock goes down and sad when it goes up, powered by Gemini Search Grounding.",
+  "requestFramePermissions": []
+}
