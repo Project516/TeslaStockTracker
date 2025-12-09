@@ -1,13 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 import { StockData } from '../types';
 
-const apiKey = process.env.API_KEY;
-
-if (!apiKey) {
-  console.error("API_KEY is missing from environment variables.");
-}
-
-const ai = new GoogleGenAI({ apiKey: apiKey || 'DUMMY_KEY_FOR_BUILD' });
+// Initialize the Google GenAI client
+// The API key must be obtained exclusively from the environment variable process.env.API_KEY
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const fetchTeslaStockData = async (): Promise<StockData> => {
   try {
