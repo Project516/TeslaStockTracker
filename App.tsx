@@ -39,7 +39,7 @@ const App: React.FC = () => {
             <div className="bg-black text-white p-1.5 rounded-lg">
               <TrendingDown className="w-5 h-5" />
             </div>
-            <h1 className="font-bold text-lg tracking-tight">TSLA Short Tracker</h1>
+            <h1 className="font-bold text-lg tracking-tight">Tesla Stock Tracker</h1>
           </div>
           <button 
             onClick={loadData}
@@ -88,8 +88,7 @@ const App: React.FC = () => {
               <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-6">
                 <h3 className="text-blue-900 font-bold text-sm uppercase tracking-wide mb-1">Concept</h3>
                 <p className="text-blue-800 text-sm">
-                  This app simulates a <strong>Short Seller's</strong> emotional state. 
-                  They are happy when the stock drops and sad when it rises.
+                  This app tracks Tesla's stock!
                 </p>
               </div>
               <StockCard data={data} />
